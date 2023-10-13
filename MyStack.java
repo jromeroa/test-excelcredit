@@ -3,6 +3,30 @@ import java.util.List;
 
 public class MyStack {
 
+    public static void main(String[] args) {
+        MyStack myStack = new MyStack();
+
+        // Push elements onto the stack
+        myStack.push(5);
+        myStack.push(10);
+        myStack.push(15);
+        myStack.push(20);
+        myStack.push(25);
+        myStack.push(30);
+        // Check if the stack is empty
+        System.out.println("Is the stack empty? " + myStack.isEmpty());
+        // Get the size of the stack
+        System.out.println("Size of the stack: " + myStack.size());
+        // Pop elements from the stack
+        System.out.println("Popped element: " + myStack.pop());
+        System.out.println("Popped element: " + myStack.pop());
+        System.out.println("Popped element: " + myStack.pop());
+        // Check if the stack is empty again
+        System.out.println("Is the stack empty? " + myStack.isEmpty());
+        // Get the size of the stack after popping
+        System.out.println("Size of the stack: " + myStack.size());
+    }
+    
     private List<Integer> stack;
 
     public MyStack() {
